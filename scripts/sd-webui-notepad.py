@@ -201,8 +201,7 @@ class Notepad(scripts.Script):
         return title
 
     def show(self, is_img2img):
-        if not is_img2img:
-            return scripts.AlwaysVisible
+        return scripts.AlwaysVisible
 
     def ui(self, is_img2img):
         with gr.Blocks(analytics_enabled=False) as ui:
